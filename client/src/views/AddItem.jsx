@@ -52,11 +52,11 @@ const AddItem = () => {
 
   return (
     <div className="container">
-      <h3 className="title"> Add Record </h3>
+      <h3 className="title"> Page-1 (Add User) </h3>
 
       <hr />
 
-      <div className="row">
+      <div className="col">
         <div className="form-group col">
           <label>Name</label>
           <input name="name" type="text" className="form-control" onChange={formik.handleChange} value={formik.values.name} placeholder="Enter your name" />
@@ -70,7 +70,7 @@ const AddItem = () => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="col">
         <div className="form-group col">
           <label>Where would you like to go?</label>
           <select name="destination" className="form-control" onChange={formik.handleChange} value={formik.values.destination}>
@@ -87,14 +87,14 @@ const AddItem = () => {
           {formik.touched.totalTravellers && formik.errors.totalTravellers ? <span className="text-error">{formik.errors.totalTravellers}</span> : null}
         </div>
       </div>
-      <div className="row">
+      <div className="col">
         <div className="form-group col-6">
           <label> Budget per Person (in $) </label>
           <input name="budgetPerPerson" type="number" className="form-control" placeholder="Enter budget per person" onChange={formik.handleChange} value={formik.values.budgetPerPerson} min={10} />
           {formik.touched.budgetPerPerson && formik.errors.budgetPerPerson ? <span className="text-error">{formik.errors.budgetPerPerson}</span> : null}
         </div>
       </div>
-      <button type="submit" className="btn btn-primary col-2" onClick={formik.handleSubmit} disabled={loading}>
+      <button type="submit" className="btn btn-warning col-3" onClick={formik.handleSubmit} disabled={loading}>
         {loading ? <i className="fa fa-spinner fa-spin"></i> : "Submit"}
       </button>
     </div>

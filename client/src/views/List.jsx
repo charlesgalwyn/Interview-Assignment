@@ -25,10 +25,11 @@ const List = () => {
 
   return (
     <div className="container">
-      <h3 className="title"> Total Records</h3>
+      <h3 className="title"> Page-2 (Total Users)</h3>
       <hr />
-      <table className="table table-borderless table-striped">
-        <thead className="">
+      <div class="table-responsive">
+      <table className="table table-borderless table-hover">
+        <thead className="thead-dark">
           <tr>
             <th>#</th>
             <th>Name</th>
@@ -41,7 +42,7 @@ const List = () => {
         <tbody>
           {records && records.length ? (
             records.map((item, index) => (
-              <tr>
+              <tr className="table-success">
                 <td> {index + 1}</td>
                 <td> {item.name}</td>
                 <td> {item.email}</td>
@@ -59,9 +60,7 @@ const List = () => {
           )}
         </tbody>
       </table>
-
-      {/* We can also use apagination module to paginate the table */}
-      
+      </div>
     </div>
   );
 };

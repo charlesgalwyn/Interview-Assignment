@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:4000/api/";
+const API_BASE_URL = "https://travelopia-backend-rise.onrender.com/api/";
 
 export const apiCall = async (method, url, reqData, params, header) => {
   return new Promise((resolve, reject) => {

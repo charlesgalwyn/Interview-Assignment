@@ -6,9 +6,9 @@ const Navigation = () => {
 
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light ">
         <ul className="navbar-nav ">
-          <li className="nav-item">
+          <li className="navbar-brand">
             <Link
               className={[
                 "nav-link",
@@ -16,10 +16,10 @@ const Navigation = () => {
               ].join(" ")}
               to="/"
             >
-              Add Record
+              Add User
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="navbar-brand">
             <Link
               className={[
                 "nav-link",
@@ -27,7 +27,7 @@ const Navigation = () => {
               ].join(" ")}
               to="/records"
             >
-              Total Records
+              Total Users
             </Link>
           </li>
         </ul>
