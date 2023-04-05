@@ -1,4 +1,4 @@
-# Travelopia (Backend)
+# Backend
 
 REST APIs for the practical task
 
