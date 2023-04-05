@@ -1,4 +1,4 @@
-# Travelopia (Frontend)
+# Frontend
 
 
 ## Available Scripts
