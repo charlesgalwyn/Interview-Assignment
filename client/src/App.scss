@@ -1,0 +1,42 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.app {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.navigation {
+	.navbar {
+		padding: 10px 150px 10px 150px;
+	}
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.container {
+	padding: 10px 150px;
+}
+
+.form {
+	border: 1px solid rgb(190, 190, 190);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+label {
+	font-size: 13px;
+}
+
+.text-error {
+	font-size: 13px;
+	color: red;
+}
